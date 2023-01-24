@@ -9,15 +9,34 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-
+    <header>        
+        <div>
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <!-- hamburger html and css copy paste from: https://codepen.io/erikterwan/pen/grOZxx  -->
+        <nav role='navigation'>
+            <div id="menuToggle">             
+                <input type="checkbox" />              
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#"><li>Features</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Launch</li></a>
+                    <a class="pinkColor" href="#"><li>Sign Up</li></a>                    
+                </ul>
+            </div>
         </nav>
+        <div id="menuDekstop">
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Launch</a>
+            <a class="pinkColor" href="#">Sign Up</a>   
+        </div>
     </header>
     <main>
-        <aside>
-
-        </aside>
+        
     </main>
     <footer>
 
