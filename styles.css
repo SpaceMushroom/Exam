@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
 }
 
-img {
+header > div > img {
     margin: 25px;
 }
 
