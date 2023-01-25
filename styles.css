@@ -21,7 +21,10 @@ header > div > img {
 
 .pinkColor {
     color: #FF3998;
+    text-transform: uppercase;
 }
+
+/* ---------------Burger------------- */
 
 a {
     text-decoration: none;
@@ -121,6 +124,82 @@ a:hover {
     opacity: 1;
 }
 
+/* ---------------Burger------------- */
+section {
+    padding-left: 2rem;
+}
+
+h1 {
+    color: black;
+}
+
+button {
+    background-color: white;
+    border-radius: 35px;
+    border: 3px coral solid;
+    padding: 0.8rem 2rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.bg {
+    background-image: url("images/background.svg");
+    background-position: center;
+    overflow-x: hidden;
+    color: black;
+    padding: 4rem 1rem 1rem 2rem;
+}
+.disp {
+    display: none;
+}
+.banners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+}
+
+.banners img {
+    width: 100px;
+    height: 30px;
+    place-self: center center;
+}
+
+.launching, .hero {
+    display: flex;
+    margin: 3rem 0;   
+}
+
+.launching :first-child, .hero :first-child {
+    min-width: 200px;
+}
+
+.launching :last-child img, .hero :last-child img {
+    height: 370px;
+    width: 300px;
+}
+
+.hero :last-child img {
+    transform: translate(-80px, -70px);
+}
+
+.logoF {
+    height: 25px;
+}
+.footerLinks {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.copyR {
+    text-align: center;
+}
+
+.footerNames {
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
 
 
 @media screen and (min-width: 600px) {
@@ -136,7 +215,7 @@ a:hover {
     #menuDekstop a {
         line-height: 90px;
         font-size: 20px;
-        padding-right: 1rem;
+        padding-right: 0.7rem;
     }
 
 
