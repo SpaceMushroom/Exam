@@ -6,10 +6,6 @@ body
     overflow-x: hidden; 
 }
 
-#menuDekstop {
-    display: none;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +21,10 @@ header > div > img {
 }
 
 /* ---------------Burger------------- */
+
+#menuDekstop {
+    display: none;
+}
 
 a {
     text-decoration: none;
@@ -125,6 +125,7 @@ a:hover {
 }
 
 /* ---------------Burger------------- */
+
 section {
     padding-left: 2rem;
 }
@@ -148,9 +149,11 @@ button {
     color: black;
     padding: 4rem 1rem 1rem 2rem;
 }
+
 .disp {
     display: none;
 }
+
 .banners {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -169,6 +172,17 @@ button {
     margin: 3rem 0;   
 }
 
+.hr {
+    
+}
+
+.launching {
+    
+    border-top: #e2d6d6 solid 1px;
+    border-bottom: #e2d6d6 solid 1px;
+}
+
+
 .launching :first-child, .hero :first-child {
     min-width: 200px;
 }
@@ -182,9 +196,14 @@ button {
     transform: translate(-80px, -70px);
 }
 
+.launching :last-child img {
+    transform: translateX(-80px);
+}
+
 .logoF {
     height: 25px;
 }
+
 .footerLinks {
     margin: 3rem 0;
     display: grid;
@@ -201,6 +220,36 @@ button {
     padding: 1rem 0;
 }
 
+h2 {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.cardBL, .cardBR {
+    text-align: left;
+    width: 95px;
+}
+
+.cardBottom {
+    width: 190px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.eth > img {
+    height: 10px;
+    width: 5px;
+}
+
+.card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+  
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
 
 @media screen and (min-width: 600px) {
     nav {
@@ -217,7 +266,56 @@ button {
         font-size: 20px;
         padding-right: 0.7rem;
     }
+    h1 {
+        font-size: 3rem;
+    }
+    .hero, .launching {
+        justify-content: space-between;
+    }
 
+    .hero :last-child img {
+        transform: none;
+        height: 550px;
+        width: 550px;
+    }
+
+    .bg {
+        margin: 0 2rem;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .disp {
+        display: block;
+    }
+    
+    .banners { 
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+    .launching {
+        margin: 1rem 2rem; 
+        padding: 0;      
+    }
+
+    footer section {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem 0;
+
+    }
+
+    .footerLinks {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin: 0 4rem;
+        justify-items: center;
+        
+    }
+    .copyR {
+        margin: 0 2rem 2rem 0;
+    }
 
 }
 
